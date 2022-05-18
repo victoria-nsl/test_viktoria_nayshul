@@ -8,7 +8,7 @@
   <meta name="description" content="Полная статистика по инцидентам">
   <title>Тестовое задание компании Zecurion</title>
   <link rel="preload" href="fonts/opensans-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2"  crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
@@ -16,8 +16,392 @@
 
 <body class="page-body">
   <header class="page-header"></header>
-  <main class="page-main">
 
+  <main class="page-main container">
+    <h1 class="visually-hidden">Инциденты</h1>
+
+    <ul class="page-main__top-list">
+      <li class="page-main__top-item page-main__top-item--active">
+        <h2>Всего инцидентов</h2>
+        <div class="page-main__top-description">
+          <p class="page-main__top-quantity">1576</p>
+          <p class="page-main__top-percent">
+            <span class="page-main__top-icon page-main__top-icon--up page-main__top-icon--active"></span>
+            <span class="page-main__top-icon page-main__top-icon--down"></span>
+            <span class="page-main__top-text">+16%</span>
+          </p>
+        </div>
+      </li>
+
+      <li class="page-main__top-item page-main__top-item--active page-main__top-item--high">
+        <h2>Высокая важность</h2>
+        <div class="page-main__top-description">
+          <p class="page-main__top-quantity">157</p>
+          <p class="page-main__top-percent">
+            <span class="page-main__top-icon page-main__top-icon--up page-main__top-icon--active"></span>
+            <span class="page-main__top-icon page-main__top-icon--down"></span>
+            <span class="page-main__top-text">+8%</span>
+          </p>
+        </div>
+      </li>
+
+      <li class="page-main__top-item page-main__top-item--active page-main__top-item--medium">
+        <h2>Средняя важность</h2>
+        <div class="page-main__top-description ">
+          <p class="page-main__top-quantity">253</p>
+          <p class="page-main__top-percent">
+            <span class="page-main__top-icon page-main__top-icon--up page-main__top-icon--active"></span>
+            <span class="page-main__top-icon page-main__top-icon--down"></span>
+            <span class="page-main__top-text">+3%</span>
+          </p>
+        </div>
+      </li>
+
+      <li class="page-main__top-item">
+        <h2>Всего связей</h2>
+        <div class="page-main__top-description">
+          <p class="page-main__top-quantity">88</p>
+          <p class="page-main__top-percent">
+            <span class="page-main__top-icon page-main__top-icon--up page-main__top-icon--active"></span>
+            <span class="page-main__top-icon page-main__top-icon--down"></span>
+            <span class="page-main__top-text">+2%</span>
+          </p>
+        </div>
+      </li>
+
+      <li class="page-main__top-item">
+        <h2>Исходящий трафик</h2>
+        <div class="page-main__top-description">
+          <p class="page-main__top-quantity">653 МБ</p>
+          <p class="page-main__top-percent">
+            <span class="page-main__top-icon page-main__top-icon--up"></span>
+            <span class="page-main__top-icon page-main__top-icon--down page-main__top-icon--active"></span>
+            <span class="page-main__top-text">-8%</span>
+          </p>
+        </div>
+      </li>
+
+      <li class="page-main__top-item">
+        <h2>Входящий трафик</h2>
+        <div class="page-main__top-description">
+          <p class="page-main__top-quantity">476 МБ</p>
+          <p class="page-main__top-percent">
+            <span class="page-main__top-icon page-main__top-icon--up page-main__top-icon--active"></span>
+            <span class="page-main__top-icon page-main__top-icon--down"></span>
+            <span class="page-main__top-text">+16%</span>
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="page-main__main-screen">
+      <p>Данные не обнаружены</p>
+    </div>
+
+    <ul class="page-main__bottom-list">
+      <li class="page-main__bottom-item">
+        <table class="users">
+          <caption class="users__caption">Пользователи по инцидентам</caption>
+          <tr>
+            <th class="users__title">Пользователь</th>
+            <th class="users__title" colspan="3">Инциденты</th>
+          </tr>
+
+          <tr>
+            <td class="users__name">Андрей Иванов</td>
+            <td class="users__high-importance">
+              <span class="users__quantity">50</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__medium-importance">
+              <span class="users__quantity">18</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__low-importance">
+              <span class="users__quantity">31</span>
+              <span class="users__icon"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="users__name">Михаил Вешкин</td>
+            <td class="users__high-importance">
+              <span class="users__quantity">47</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__medium-importance">
+              <span class="users__quantity">24</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__low-importance">
+              <span class="users__quantity">0</span>
+              <span class="users__icon"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="users__name">Семен Измайлов</td>
+            <td class="users__high-importance">
+              <span class="users__quantity">32</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__medium-importance">
+              <span class="users__quantity">0</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__low-importance">
+              <span class="users__quantity">12</span>
+              <span class="users__icon"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="users__name">Николай Островский</td>
+            <td class="users__high-importance">
+              <span class="users__quantity">11</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__medium-importance">
+              <span class="users__quantity">7</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__low-importance">
+              <span class="users__quantity">0</span>
+              <span class="users__icon"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="users__name">Константин Константинопольский</td>
+            <td class="users__high-importance">
+              <span class="users__quantity">0</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__medium-importance">
+              <span class="users__quantity">0</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__low-importance">
+              <span class="users__quantity">8</span>
+              <span class="users__icon"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="users__name">Александр Овчинников</td>
+            <td class="users__high-importance">
+              <span class="users__quantity">0</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__medium-importance">
+              <span class="users__quantity">13</span>
+              <span class="users__icon"></span>
+            </td>
+            <td class="users__low-importance">
+              <span class="users__quantity">7</span>
+              <span class="users__icon"></span>
+            </td>
+          </tr>
+        </table>
+      </li>
+
+      <li class="page-main__bottom-item">
+        <table class="sites">
+          <caption class="sites__caption">Категории сайтов</caption>
+          <tr>
+            <th class="sites__title">Категория</th>
+            <th class="sites__title">Количество инцидентов</th>
+          </tr>
+
+          <tr>
+            <td class="sites__category">Поисковики</td>
+            <td class="sites__description">
+              <p class="sites__quantity">1257</p>
+              <p class="sites__percent">
+                <span class="sites__icon sites__icon--up sites__icon--active"></span>
+                <span class="sites__icon sites__icon--down"></span>
+                <span class="sites__text">+3%</span>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="sites__category">Новостные порталы</td>
+            <td class="sites__description">
+              <p class="sites__quantity">1129</p>
+              <p class="sites__percent">
+                <span class="sites__icon sites__icon--up "></span>
+                <span class="sites__icon sites__icon--down sites__icon--active"></span>
+                <span class="sites__text">-2.1%</span>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="sites__category">Развлекательные</td>
+            <td class="sites__description">
+              <p class="sites__quantity">987</p>
+              <p class="sites__percent">
+                <span class="sites__icon sites__icon--up sites__icon--active"></span>
+                <span class="sites__icon sites__icon--down"></span>
+                <span class="sites__text">+7%</span>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="sites__category">Категория с длинным названием, которое обрезается по ширине</td>
+            <td class="sites__description">
+              <p class="sites__quantity">596</p>
+              <p class="sites__percent">
+                <span class="sites__icon sites__icon--up "></span>
+                <span class="sites__icon sites__icon--down sites__icon--active"></span>
+                <span class="sites__text">-3%</span>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="sites__category">Игры</td>
+            <td class="sites__description">
+              <p class="sites__quantity">431</p>
+              <p class="sites__percent">
+                <span class="sites__icon sites__icon--up sites__icon--active"></span>
+                <span class="sites__icon sites__icon--down"></span>
+                <span class="sites__text">+1%</span>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="sites__category">Форумы</td>
+            <td class="sites__description">
+              <p class="sites__quantity">147</p>
+              <p class="sites__percent">
+                <span class="sites__icon sites__icon--up sites__icon--active"></span>
+                <span class="sites__icon sites__icon--down"></span>
+                <span class="sites__text">+2%</span>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </li>
+
+      <li class="page-main__bottom-item">
+        <table class="discipline">
+          <caption class="discipline__caption">Дисциплина</caption>
+          <tr>
+            <th class="discipline__title">Дата</th>
+            <th class="discipline__title">Приход</th>
+            <th class="discipline__title">Уход</th>
+            <th class="discipline__title">Рабочее время</th>
+          </tr>
+
+          <tr>
+            <td class="discipline__date">
+              <time datetime="2022-04-20">20.04</time>
+            </td>
+            <td class="discipline__arrival">
+              <span class="discipline__time"><time>08:07</time></span>
+              <span class="discipline__change">+7мин</span>
+            </td>
+            <td class="discipline__departure">
+              <span class="discipline__time"><time>16:55</time></span>
+              <span class="discipline__change">-5мин</span>
+            </td>
+            <td class="discipline__working-hours">
+              <time>07:48</time>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="discipline__date">
+              <time datetime="2022-04-19">19.04</time>
+            </td>
+            <td class="discipline__arrival">
+              <span class="discipline__time"><time>07:56</time></span>
+              <span class="discipline__change">-4мин</span>
+            </td>
+            <td class="discipline__departure">
+              <span class="discipline__time"><time>16:56</time></span>
+              <span class="discipline__change">+4мин</span>
+            </td>
+            <td class="discipline__working-hours">
+              <time>08:00</time>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="discipline__date">
+              <time datetime="2022-04-18">18.04</time>
+            </td>
+            <td class="discipline__arrival">
+              <span class="discipline__time"><time>09:30</time></span>
+              <span class="discipline__change">+1ч 30мин</span>
+            </td>
+            <td class="discipline__departure">
+              <span class="discipline__time"><time>18:30</time></span>
+              <span class="discipline__change">+1ч 30мин</span>
+            </td>
+            <td class="discipline__working-hours">
+              <time>08:00</time>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="discipline__date">
+              <time datetime="2022-04-17">17.04</time>
+            </td>
+            <td class="discipline__arrival">
+              <span class="discipline__time"><time>08:47</time></span>
+              <span class="discipline__change">+47мин</span>
+            </td>
+            <td class="discipline__departure">
+              <span class="discipline__time"><time>17:47</time></span>
+              <span class="discipline__change">+47мин</span>
+            </td>
+            <td class="discipline__working-hours">
+              <time>08:00</time>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="discipline__date">
+              <time datetime="2022-04-16">16.04</time>
+            </td>
+            <td class="discipline__arrival">
+              <span class="discipline__time"><time>08:12</time></span>
+              <span class="discipline__change">+12мин</span>
+            </td>
+            <td class="discipline__departure">
+              <span class="discipline__time"><time>16:55</time></span>
+              <span class="discipline__change">-5мин</span>
+            </td>
+            <td class="discipline__working-hours">
+              <time>07:43</time>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="discipline__date">
+              <time datetime="2022-04-14">14.04</time>
+            </td>
+            <td class="discipline__arrival">
+              <span class="discipline__time"><time>08:00</time></span>
+              <span class="discipline__change">-</span>
+            </td>
+            <td class="discipline__departure">
+              <span class="discipline__time"><time>16:57</time></span>
+              <span class="discipline__change">-3мин</span>
+            </td>
+            <td class="discipline__working-hours">
+              <time>07:57</time>
+            </td>
+          </tr>
+        </table>
+      </li>
+    </ul>
   </main>
   <footer class="page-footer"></footer>
   <script type="module" src="js/main.js"></script>

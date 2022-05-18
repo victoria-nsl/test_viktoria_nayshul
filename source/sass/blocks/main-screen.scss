@@ -1,0 +1,161 @@
+.page-main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+//Верх
+.page-main__top-list {
+  @include reset-style-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.8%;
+  row-gap: 30px;
+  padding: 35px 0 35px 0;
+  margin-bottom: 5px;
+
+  @media (max-width: $tablet-max-width) {
+    column-gap: 2.82%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    column-gap: 0;
+  }
+}
+
+.page-main__top-item {
+  width: 15.85%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 31.45%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 50%;
+  }
+}
+
+.page-main__top-item:not(:last-child) {
+  position: relative;
+}
+
+.page-main__top-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  transform: translateY(-50%);
+
+  width: 1px;
+  height: 37px;
+
+  background-color: $grey-border;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
+.page-main__top-item h2 {
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: $grey-dark-text;
+}
+
+.page-main__top-description {
+  display: flex;
+  column-gap: 5px;
+}
+
+.page-main__top-quantity {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: $black;
+}
+
+.page-main__top-item--high .page-main__top-quantity {
+  color: $pink;
+}
+
+.page-main__top-item--medium .page-main__top-quantity {
+  color: $orange;
+}
+
+.page-main__top-percent {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: $black;
+}
+
+.page-main__top-icon {
+  display: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+  &--up {
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent $black transparent;
+  }
+
+  &--down {
+    border-width: 5px 5px 0 5px;
+    border-color: $black transparent transparent transparent;
+  }
+}
+
+.page-main__top-item--active .page-main__top-icon--up {
+  border-color: transparent transparent $pink transparent;
+}
+
+.page-main__top-item--active .page-main__top-icon--down {
+  border-color: $green transparent transparent transparent;
+}
+
+.page-main__top-icon--active {
+  display: block;
+}
+
+//Середина
+.page-main__main-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 575px;
+
+  background-color: $grey;
+}
+
+.page-main__main-screen p {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 13px;
+  color: $grey-text;
+}
+
+//Низ
+.page-main__bottom-list {
+  @include reset-style-list;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1.55%;
+}
+
+.page-main__bottom-item {
+  width: 32.3%;
+}
