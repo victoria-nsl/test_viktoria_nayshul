@@ -45,6 +45,14 @@
   @media (max-width: 1559px) {
     display: none;
   }
+
+  @media (max-width: $tablet-max-width) {
+    display: inline;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
 }
 
 .sites__description {

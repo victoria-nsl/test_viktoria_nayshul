@@ -155,8 +155,23 @@
   align-items: center;
   flex-wrap: wrap;
   column-gap: 1.55%;
+
+  @media (max-width: $tablet-max-width) {
+    flex-direction: column;
+  }
 }
 
 .page-main__bottom-item {
   width: 32.3%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+  }
+}
+
+
+.page-main__bottom-item:not(:last-child) {
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 40px;
+  }
 }
