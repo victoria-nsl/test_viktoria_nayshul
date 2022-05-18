@@ -4,3 +4,24 @@
 
   list-style: none;
 }
+
+@mixin caption-table {
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+@mixin title-table {
+  font-size: 12px;
+  color: $grey-text;
+}
+
+@mixin text-table {
+  font-size: 13px;
+}
+
+@mixin data-table {
+  font-weight: 600;
+  font-size: 13px;
+}

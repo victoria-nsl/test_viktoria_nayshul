@@ -1,0 +1,93 @@
+.users {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.users__caption {
+  @include caption-table;
+  text-align: start;
+}
+
+.users tr {
+  display: flex;
+}
+
+.users__title {
+  @include title-table;
+
+  padding: 8px 0 3px;
+
+  border-bottom: 1px solid $grey-text;
+  text-align: end;
+}
+
+.users__title:first-child {
+  flex-grow: 1;
+
+  text-align: start;
+}
+
+.users td {
+  padding: 6px 0 5px;
+
+  border-bottom: 1px solid $grey-text;
+}
+
+.users td:not(:first-child) {
+  width: 60px;
+  text-align: end;
+}
+
+.users__name {
+  @include text-table;
+  flex-grow: 1;
+}
+
+.users__high-importance,
+.users__medium-importance,
+.users__low-importance {
+  position: relative;
+}
+
+.users__quantity {
+  @include data-table;
+  display: block;
+
+  padding-left: 32px;
+  padding-right: 13px;
+  text-align: end;
+}
+
+.users__icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.users__high-importance .users__icon {
+  border: 1px solid $pink;
+  background-color: $pink;
+}
+
+.users__medium-importance .users__icon {
+  border: 1px solid $orange;
+  background-color: $orange;
+}
+
+.users__low-importance .users__icon {
+  border: 1px solid $green;
+  background-color: $green;
+}
+
+.users__high-importance .users__icon--null,
+.users__medium-importance .users__icon--null,
+.users__low-importance .users__icon--null {
+  background-color: transparent;
+}

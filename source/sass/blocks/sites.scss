@@ -1,0 +1,98 @@
+.sites {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.sites tr {
+  display: flex;
+}
+
+.sites__caption {
+  @include caption-table;
+  text-align: start;
+}
+
+.sites__title {
+  @include title-table;
+
+  padding: 8px 0 3px;
+  border-bottom: 1px solid $grey-text;
+  text-align: end;
+}
+
+.sites__title:first-child {
+  flex-grow: 1;
+  text-align: start;
+}
+
+.sites td {
+  padding: 6px 0 5px;
+  border-bottom: 1px solid $grey-text;
+}
+
+.sites td:not(:first-child) {
+  width: 60px;
+  text-align: end;
+}
+
+.sites__category {
+  @include text-table;
+  flex-grow: 1;
+}
+
+.sites__category span {
+  @media (max-width: 1559px) {
+    display: none;
+  }
+}
+
+.sites__description {
+  display: flex;
+  column-gap: 5px;
+}
+
+.sites__quantity {
+  @include data-table;
+
+  width: 35px;
+  margin: 0;
+  text-align: end;
+}
+
+.sites__percent {
+  margin: 0;
+
+  font-size: 9px;
+  color: $grey-text;
+  text-align: end;
+}
+
+.sites__icon {
+  display: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+  &--up {
+    border-width: 0 3px 3px 3px;
+    border-color: transparent transparent $pink transparent;
+  }
+
+  &--down {
+    border-width: 3px 3px 0 3px;
+    border-color: $green transparent transparent transparent;
+  }
+}
+
+.sites__icon--active .sites__icon--up {
+  border-color: transparent transparent $pink transparent;
+}
+
+.sites__icon--active .sites__icon--down {
+  border-color: $green transparent transparent transparent;
+}
+
+.sites__icon--active {
+  display: block;
+}

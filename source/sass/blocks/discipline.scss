@@ -1,0 +1,85 @@
+.discipline {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.discipline__caption {
+  @include caption-table;
+  text-align: start;
+}
+
+.discipline tr {
+  display: flex;
+}
+
+.discipline__title {
+  @include title-table;
+
+  padding: 8px 0 3px;
+  box-sizing: border-box;
+
+  border-bottom: 1px solid $grey-text;
+
+  &--date {
+    flex-grow: 1;
+  }
+
+  &--arrival {
+    width: 27.6%;
+  }
+
+  &--departure {
+    width: 22.5%;
+  }
+
+  &--time {
+    width: 95px;
+    text-align: center;
+  }
+}
+
+.discipline__description {
+  @include text-table;
+
+  padding: 6px 0 5px;
+  border-bottom: 1px solid $grey-text;
+
+  &--date {
+    flex-grow: 1;
+  }
+
+  &--arrival {
+    width: 27.6%;
+  }
+
+  &--departure {
+    width: 22.5%;
+  }
+
+  &--working-hours {
+    width: 95px;
+
+    text-align: center;
+  }
+
+  &--hours-part {
+    color: $pink;
+  }
+
+  &--hours-full {
+    color: $green;
+  }
+}
+
+.discipline__change {
+  font-size: 11px;
+
+  &--up {
+    color: $pink;
+  }
+
+  &--down {
+    color: $green;
+  }
+}

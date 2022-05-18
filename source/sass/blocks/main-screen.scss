@@ -81,7 +81,7 @@
 }
 
 .page-main__top-item--high .page-main__top-quantity {
-  color: $pink;
+  color: $red;
 }
 
 .page-main__top-item--medium .page-main__top-quantity {
@@ -115,7 +115,7 @@
 }
 
 .page-main__top-item--active .page-main__top-icon--up {
-  border-color: transparent transparent $pink transparent;
+  border-color: transparent transparent $red transparent;
 }
 
 .page-main__top-item--active .page-main__top-icon--down {
@@ -134,6 +134,7 @@
 
   width: 100%;
   min-height: 575px;
+  margin-bottom: 40px;
 
   background-color: $grey;
 }
