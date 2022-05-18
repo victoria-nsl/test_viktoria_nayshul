@@ -234,8 +234,8 @@ img {
   font-size: 12px;
   color: #a0a0a0;
   padding: 8px 0 3px;
-  border-bottom: 1px solid #a0a0a0;
-  text-align: end; }
+  text-align: end;
+  border-bottom: 1px solid #a0a0a0; }
   @media (max-width: 767px) {
     .users__title {
       font-size: 9px; } }
@@ -313,15 +313,15 @@ img {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.sites tr {
-  display: flex; }
-
 .sites__caption {
   font-weight: 300;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
   text-align: start; }
+
+.sites tr {
+  display: flex; }
 
 .sites__title {
   font-size: 12px;

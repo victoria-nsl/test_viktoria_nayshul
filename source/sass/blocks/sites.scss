@@ -1,11 +1,8 @@
 .sites {
   width: 100%;
+
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-.sites tr {
-  display: flex;
 }
 
 .sites__caption {
@@ -13,26 +10,34 @@
   text-align: start;
 }
 
+.sites tr {
+  display: flex;
+}
+
 .sites__title {
   @include title-table;
 
   padding: 8px 0 3px;
   border-bottom: 1px solid $grey-text;
+
   text-align: end;
 }
 
 .sites__title:first-child {
   flex-grow: 1;
+
   text-align: start;
 }
 
 .sites td {
   padding: 6px 0 5px;
+
   border-bottom: 1px solid $grey-text;
 }
 
 .sites td:not(:first-child) {
   width: 60px;
+
   text-align: end;
 }
 
@@ -65,6 +70,7 @@
 
   width: 35px;
   margin: 0;
+
   text-align: end;
 }
 
@@ -80,6 +86,7 @@
   display: none;
   width: 0;
   height: 0;
+
   border-style: solid;
 
   &--up {

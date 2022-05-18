@@ -1,5 +1,6 @@
 .discipline {
   width: 100%;
+
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -43,6 +44,7 @@
   @include text-table;
 
   padding: 6px 0 5px;
+
   border-bottom: 1px solid $grey-text;
 
   &--date {

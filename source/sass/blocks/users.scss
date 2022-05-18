@@ -1,5 +1,6 @@
 .users {
   width: 100%;
+
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -18,8 +19,9 @@
 
   padding: 8px 0 3px;
 
-  border-bottom: 1px solid $grey-text;
   text-align: end;
+
+  border-bottom: 1px solid $grey-text;
 }
 
 .users__title:first-child {
@@ -36,6 +38,7 @@
 
 .users td:not(:first-child) {
   width: 60px;
+
   text-align: end;
 
   @media (max-width: $mobile-max-width) {
@@ -76,6 +79,7 @@
   display: block;
   width: 8px;
   height: 8px;
+
   border-radius: 50%;
 }
 
