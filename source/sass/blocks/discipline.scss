@@ -28,10 +28,12 @@
 
   &--arrival {
     width: 27.6%;
+    padding-left: 18px;
   }
 
   &--departure {
     width: 22.5%;
+    padding-left: 28px;
   }
 
   &--time {
@@ -75,6 +77,7 @@
 }
 
 .discipline__change {
+  padding-left: 2px;
   font-size: 11px;
 
   &--up {

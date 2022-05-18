@@ -184,7 +184,7 @@ img {
   justify-content: center;
   width: 100%;
   min-height: 575px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   background-color: #e1e1e1; }
 
 .page-main__main-screen p {
@@ -231,6 +231,7 @@ img {
   display: flex; }
 
 .users__title {
+  font-weight: 400;
   font-size: 12px;
   color: #a0a0a0;
   padding: 8px 0 3px;
@@ -256,6 +257,7 @@ img {
       width: 35px; } }
 
 .users__name {
+  font-weight: 400;
   font-size: 13px;
   flex-grow: 1; }
   @media (max-width: 767px) {
@@ -271,8 +273,8 @@ img {
   font-weight: 600;
   font-size: 13px;
   display: block;
-  padding-left: 32px;
-  padding-right: 13px;
+  padding-left: 25px;
+  padding-right: 15px;
   text-align: end; }
   @media (max-width: 767px) {
     .users__quantity {
@@ -324,6 +326,7 @@ img {
   display: flex; }
 
 .sites__title {
+  font-weight: 400;
   font-size: 12px;
   color: #a0a0a0;
   padding: 8px 0 3px;
@@ -342,10 +345,11 @@ img {
   border-bottom: 1px solid #a0a0a0; }
 
 .sites td:not(:first-child) {
-  width: 60px;
+  width: 62px;
   text-align: end; }
 
 .sites__category {
+  font-weight: 400;
   font-size: 13px;
   flex-grow: 1; }
   @media (max-width: 767px) {
@@ -421,6 +425,7 @@ img {
   display: flex; }
 
 .discipline__title {
+  font-weight: 400;
   font-size: 12px;
   color: #a0a0a0;
   padding: 8px 0 3px;
@@ -432,14 +437,17 @@ img {
   .discipline__title--date {
     flex-grow: 1; }
   .discipline__title--arrival {
-    width: 27.6%; }
+    width: 27.6%;
+    padding-left: 18px; }
   .discipline__title--departure {
-    width: 22.5%; }
+    width: 22.5%;
+    padding-left: 28px; }
   .discipline__title--time {
     width: 95px;
     text-align: center; }
 
 .discipline__description {
+  font-weight: 400;
   font-size: 13px;
   padding: 6px 0 5px;
   border-bottom: 1px solid #a0a0a0; }
@@ -461,6 +469,7 @@ img {
     color: #8bc834; }
 
 .discipline__change {
+  padding-left: 2px;
   font-size: 11px; }
   .discipline__change--up {
     color: #ff0072; }
