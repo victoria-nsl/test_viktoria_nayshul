@@ -106,21 +106,13 @@
 
   &--up {
     border-width: 0 5px 5px 5px;
-    border-color: transparent transparent $black transparent;
+    border-color: transparent transparent  $red transparent;
   }
 
   &--down {
     border-width: 5px 5px 0 5px;
-    border-color: $black transparent transparent transparent;
+    border-color: $green transparent transparent transparent;
   }
-}
-
-.page-main__top-item--active .page-main__top-icon--up {
-  border-color: transparent transparent $red transparent;
-}
-
-.page-main__top-item--active .page-main__top-icon--down {
-  border-color: $green transparent transparent transparent;
 }
 
 .page-main__top-icon--active {

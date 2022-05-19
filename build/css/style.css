@@ -164,16 +164,10 @@ img {
   border-style: solid; }
   .page-main__top-icon--up {
     border-width: 0 5px 5px 5px;
-    border-color: transparent transparent #000000 transparent; }
+    border-color: transparent transparent #ee144e transparent; }
   .page-main__top-icon--down {
     border-width: 5px 5px 0 5px;
-    border-color: #000000 transparent transparent transparent; }
-
-.page-main__top-item--active .page-main__top-icon--up {
-  border-color: transparent transparent #ee144e transparent; }
-
-.page-main__top-item--active .page-main__top-icon--down {
-  border-color: #8bc834 transparent transparent transparent; }
+    border-color: #8bc834 transparent transparent transparent; }
 
 .page-main__top-icon--active {
   display: block; }

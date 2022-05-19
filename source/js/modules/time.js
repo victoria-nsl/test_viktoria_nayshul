@@ -79,11 +79,20 @@ if(blockDiscipline) {
 
     timeStartChange.startsWith('+') ? timeWorkedStartChange.classList.add('discipline__change--up') : timeWorkedStartChange.classList.add('discipline__change--down');
 
+    if(timeStartChange.length === 1 ) {
+      timeWorkedStartChange.classList.remove('discipline__change--down');
+    }
+
     //Получить разницу по времени по уходу
     const timeEndChange= countTimeDifferent(TIME_END_STANDARD,timeEnd);
 
     timeWorkedEndChange.textContent = timeEndChange;
 
     timeEndChange.startsWith('+') ?  timeWorkedEndChange.classList.add('discipline__change--down') :  timeWorkedEndChange.classList.add('discipline__change--up');
+
+
+    if(timeEndChange.length === 1 ) {
+      timeEndChange.classList.remove('discipline__change--down');
+    }
   });
 }

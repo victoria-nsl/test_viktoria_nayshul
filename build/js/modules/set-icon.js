@@ -1,6 +1,6 @@
 const blockUsers = document.querySelector('.users');
 const blockSites = document.querySelector('.sites');
-
+const blockStatistics = document.querySelector('.page-main__top-list');
 
 if(blockUsers) {
   const elementsQuantity = blockUsers.querySelectorAll('.users__quantity');
@@ -28,5 +28,19 @@ if(blockSites) {
     const quantity = quantityIncidents.textContent;
 
     quantity.startsWith('+') ? iconUp.classList.add('sites__icon--active') : iconDown.classList.add('sites__icon--active');
+  });
+}
+
+if(blockStatistics) {
+  const  blocksPercentStatistic =  blockStatistics.querySelectorAll('.page-main__top-percent');
+
+  blocksPercentStatistic.forEach(( blockPercentStatistic) => {
+    const quantityChanged = blockPercentStatistic.querySelector('.page-main__top-text');
+    const iconUp = blockPercentStatistic.querySelector('.page-main__top-icon--up');
+    const iconDown = blockPercentStatistic.querySelector('.page-main__top-icon--down');
+
+    const quantity = quantityChanged.textContent;
+
+    quantity.startsWith('+') ? iconUp.classList.add('page-main__top-icon--active') : iconDown.classList.add('page-main__top-icon--active');
   });
 }
